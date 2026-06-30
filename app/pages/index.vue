@@ -109,7 +109,7 @@ const links = [
 
 .page {
   min-height: 100vh;
-  background: #0d0d0d;
+  background: #0d0d2b url('/bg.png') center center / cover no-repeat fixed;
   color: #ffffff;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   display: flex;
@@ -136,19 +136,19 @@ const links = [
 .avatar-ring {
   padding: 3px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #444 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #c47aaa 0%, #7b6fc4 100%);
 }
 
 .avatar {
   width: 88px;
   height: 88px;
   border-radius: 50%;
-  border: 3px solid #0d0d0d;
+  border: 3px solid #1a1535;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #111;
+  background: #1a1535;
 }
 
 .avatar-img {
@@ -161,7 +161,7 @@ const links = [
 .username {
   font-size: 1rem;
   font-weight: 500;
-  color: #e0e0e0;
+  color: #d8d0f0;
   letter-spacing: 0.5px;
 }
 
@@ -179,14 +179,17 @@ const links = [
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #1a1a1a;
-  color: #ccc;
+  background: rgba(120, 100, 200, 0.25);
+  border: 1px solid rgba(180, 140, 220, 0.2);
+  color: #c0aee8;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  backdrop-filter: blur(6px);
 }
 
 .icon-btn:hover {
-  background: #2a2a2a;
+  background: rgba(160, 120, 220, 0.4);
+  border-color: rgba(200, 160, 240, 0.4);
   color: #fff;
 }
 
@@ -196,7 +199,8 @@ const links = [
   overflow: hidden;
   position: relative;
   height: 140px;
-  border: 1px solid #222;
+  border: 1px solid rgba(160, 120, 200, 0.25);
+  backdrop-filter: blur(8px);
 }
 
 .banner-bg {
@@ -205,7 +209,7 @@ const links = [
   background-image: url('/profile-bg.jpg');
   background-size: cover;
   background-position: center 20%;
-  filter: brightness(0.35);
+  filter: brightness(0.3) saturate(1.2);
 }
 
 .banner-content {
@@ -222,13 +226,13 @@ const links = [
   font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: -0.5px;
-  color: #fff;
+  color: #f0e8ff;
   font-style: italic;
 }
 
 .banner-sub {
   font-size: 0.72rem;
-  color: #aaa;
+  color: #c0aee0;
   margin-top: 3px;
   letter-spacing: 0.3px;
 }
@@ -237,8 +241,8 @@ const links = [
   font-size: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #888;
-  border: 1px solid #444;
+  color: #c47aaa;
+  border: 1px solid rgba(196, 122, 170, 0.4);
   padding: 4px 10px;
   border-radius: 20px;
   align-self: flex-start;
@@ -249,7 +253,7 @@ const links = [
 .section-label {
   font-size: 0.62rem;
   letter-spacing: 3px;
-  color: #555;
+  color: #8878b8;
   font-weight: 600;
   text-align: center;
   margin-bottom: 12px;
@@ -265,20 +269,21 @@ const links = [
   display: flex;
   align-items: center;
   gap: 14px;
-  background: #161616;
-  border: 1px solid #222;
+  background: rgba(18, 14, 45, 0.55);
+  border: 1px solid rgba(150, 120, 200, 0.2);
   border-radius: 12px;
   padding: 14px 16px;
   text-decoration: none;
-  color: #d0d0d0;
+  color: #c8c0e8;
   transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  backdrop-filter: blur(10px);
 }
 
 .link-card:hover {
-  background: #1e1e1e;
-  border-color: #333;
+  background: rgba(80, 60, 140, 0.45);
+  border-color: rgba(196, 122, 170, 0.4);
   transform: translateY(-1px);
-  color: #fff;
+  color: #f0e8ff;
 }
 
 .link-card:active {
@@ -289,12 +294,12 @@ const links = [
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #222;
+  background: rgba(120, 90, 180, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: #bbb;
+  color: #c47aaa;
 }
 
 .link-label {
@@ -306,14 +311,14 @@ const links = [
 }
 
 .link-arrow {
-  color: #444;
+  color: #7060a8;
   flex-shrink: 0;
 }
 
 /* ── footer ── */
 .footer {
   text-align: center;
-  color: #333;
+  color: #5a5080;
   font-size: 0.7rem;
   letter-spacing: 1px;
   padding-top: 8px;
