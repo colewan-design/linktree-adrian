@@ -25,18 +25,6 @@
         </div>
       </section>
 
-      <!-- Featured banner -->
-      <section class="banner">
-        <div class="banner-bg" />
-        <div class="banner-content">
-          <div class="banner-text">
-            <p class="banner-name">Adrian Benig</p>
-            <p class="banner-sub">Guitarist · Content Creator</p>
-          </div>
-          <span class="banner-tag">links</span>
-        </div>
-      </section>
-
       <!-- Links section -->
       <section class="links-section">
         <h2 class="section-label">SOCIAL MEDIA</h2>
@@ -191,62 +179,6 @@ const links = [
   background: rgba(160, 120, 220, 0.4);
   border-color: rgba(200, 160, 240, 0.4);
   color: #fff;
-}
-
-/* ── featured banner ── */
-.banner {
-  border-radius: 14px;
-  overflow: hidden;
-  position: relative;
-  height: 140px;
-  border: 1px solid rgba(160, 120, 200, 0.25);
-  backdrop-filter: blur(8px);
-}
-
-.banner-bg {
-  position: absolute;
-  inset: 0;
-  background-image: url('/profile-bg.jpg');
-  background-size: cover;
-  background-position: center 20%;
-  filter: brightness(0.3) saturate(1.2);
-}
-
-.banner-content {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 16px 20px;
-}
-
-.banner-name {
-  font-size: 1.4rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  color: #f0e8ff;
-  font-style: italic;
-}
-
-.banner-sub {
-  font-size: 0.72rem;
-  color: #c0aee0;
-  margin-top: 3px;
-  letter-spacing: 0.3px;
-}
-
-.banner-tag {
-  font-size: 0.62rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #c47aaa;
-  border: 1px solid rgba(196, 122, 170, 0.4);
-  padding: 4px 10px;
-  border-radius: 20px;
-  align-self: flex-start;
-  margin-top: 16px;
 }
 
 /* ── links section ── */
